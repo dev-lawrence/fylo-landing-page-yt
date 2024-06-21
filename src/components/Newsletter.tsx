@@ -101,11 +101,11 @@ const Newsletter = () => {
               >
                 {isLoading ? "Loading..." : "Get Started For Free"}
               </button>
-
-              {message.type === "success" && (
-                <p className="mt-4">{message.text}</p>
-              )}
             </div>
+
+            {message.type === "success" && (
+              <p className="mt-4">{message.text}</p>
+            )}
           </form>
         </div>
       </div>
