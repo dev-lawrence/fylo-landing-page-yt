@@ -1,0 +1,35 @@
+---
+import FeatureCard from './FeatureCard.astro';
+import Access from '../asset/icon-access-anywhere.svg';
+import Security from '../asset/icon-security.svg';
+import Collab from '../asset/icon-collaboration.svg';
+import File from '../asset/icon-any-file.svg';
+---
+
+<section class="mx-auto mt-28 max-w-[900px]">
+  <div class="container md:grid md:grid-cols-2 md:gap-24">
+    <FeatureCard
+      image={Access}
+      title="Access your files, anywhere"
+      text="The ability to use a smartphone, tablet, or computer to access your account means your files follow you everywhere."
+    />
+
+    <FeatureCard
+      image={Security}
+      title="Security you can trust"
+      text="2-factor authentication and user-controlled encryption are just a couple of the security features we allow to help secure your files."
+    />
+
+    <FeatureCard
+      image={Collab}
+      title="Real-time collaboration"
+      text="Securely share files and folders with friends, family and colleagues for live collaboration. No email attachments required."
+    />
+
+    <FeatureCard
+      image={File}
+      title="Store any type of file"
+      text="Whether you're sharing holidays photos or work documents, Fylo has you covered allowing for all file types to be securely stored and shared."
+    />
+  </div>
+</section>

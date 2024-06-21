@@ -1,0 +1,24 @@
+---
+const navItems = [
+  { name: 'Features', href: '#' },
+  { name: 'Team', href: '#' },
+  { name: 'Sign in', href: '#' },
+];
+---
+
+<nav>
+  <ul class="item-center flex justify-start gap-8">
+    {
+      navItems.map((item) => (
+        <li>
+          <a
+            class="text-accent-400 transition-colors duration-300 hover:text-white"
+            href={item.href}
+          >
+            {item.name}
+          </a>
+        </li>
+      ))
+    }
+  </ul>
+</nav>

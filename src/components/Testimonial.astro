@@ -1,0 +1,58 @@
+---
+import { Image } from 'astro:assets';
+import Profile1 from '../asset/profile-1.jpg';
+import Profile2 from '../asset/profile-2.jpg';
+import Profile3 from '../asset/profile-3.jpg';
+import Quote from '../asset/bg-quotes.png';
+
+const testimonialData = [
+  {
+    text: 'Fylo has improved our team productivity by an order of magnitude. Since making the switch our team has become a well-oiled collaboration machine.',
+    name: 'Satish Patel',
+    image: Profile1,
+    position: 'Founder & CEO, Huddle',
+  },
+
+  {
+    text: 'Fylo has improved our team productivity by an order of magnitude. Since making the switch our team has become a well-oiled collaboration machine.',
+    name: 'Bruce McKenzie',
+    image: Profile2,
+    position: 'Founder & CEO, Huddle',
+  },
+
+  {
+    text: 'Fylo has improved our team productivity by an order of magnitude. Since making the switch our team has become a well-oiled collaboration machine.',
+    name: 'Iva Boyd',
+    image: Profile3,
+    position: 'Founder & CEO, Huddle',
+  },
+];
+---
+
+<section class="pt-28">
+  <div class="container">
+    <div class="relative z-20 md:grid md:grid-cols-2 md:gap-6 lg:grid-cols-3">
+      <Image class="absolute top-[-2rem] -z-10" src={Quote} alt="Quote" />
+
+      {
+        testimonialData.map((review) => (
+          <div class="mb-8 rounded-lg bg-primary-400 px-6 pb-6 pt-8 md:mb-0">
+            <p class="mb-4 leading-7">{review.text}</p>
+            <div class="item-center flex justify-start gap-4">
+              <Image
+                class="size-[45px] rounded-full"
+                src={review.image}
+                alt={review.name}
+              />
+
+              <div>
+                <h4 class="font-700">{review.name}</h4>
+                <span class="text-sm">{review.position}</span>
+              </div>
+            </div>
+          </div>
+        ))
+      }
+    </div>
+  </div>
+</section>

@@ -1,0 +1,33 @@
+---
+import { Image } from 'astro:assets';
+import ProductiveImg from '../asset/illustration-stay-productive.png';
+---
+
+<section class="pt-28">
+  <div class="container md:grid md:grid-cols-2 md:gap-8">
+    <Image class="mb-4 md:mb-4" src={ProductiveImg} alt="ProductiveImg" />
+
+    <div class="md:self-center">
+      <h2 class="mb-4 text-2xl font-700 md:text-3xl">
+        Stay productive, wherever you are
+      </h2>
+      <p class="mb-4">
+        Never let location be an issue when accessing your files. Fylo has you
+        covered for all of your file storage needs.
+      </p>
+      <p class="mb-4">
+        Securely share files and folders with friends, family and colleagues for
+        live collaboration. No email attachments required.
+      </p>
+      <a
+        href="#"
+        class="item-center group relative flex w-fit justify-start gap-2 pb-1 text-accent-100 transition-colors duration-300 after:absolute after:bottom-0 after:h-[1.5px] after:w-full after:bg-accent-100 hover:text-white hover:after:bg-white"
+      >
+        <span>See how Fylo works</span>
+        <i
+          class="fas fa-arrow-right size-4 translate-y-[.2rem] rounded-full bg-accent-100 text-center text-[.6rem] leading-4 text-black transition-colors duration-300 group-hover:bg-white"
+        ></i>
+      </a>
+    </div>
+  </div>
+</section>

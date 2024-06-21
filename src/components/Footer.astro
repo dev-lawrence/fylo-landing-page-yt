@@ -1,0 +1,144 @@
+---
+import { Image } from 'astro:assets';
+import Logo from '../asset/logo.svg';
+import Location from '../asset/icon-location.svg';
+import Phone from '../asset/icon-phone.svg';
+import Mail from '../asset/icon-email.svg';
+---
+
+<footer class="mt-80 bg-primary-300">
+  <div class="container">
+    <div class="pt-60 lg:pb-8 lg:pt-32">
+      <div
+        class="md:grid md:grid-cols-2 md:gap-8 lg:grid-cols-[2.5fr,1.5fr,1fr,1fr,1fr]"
+      >
+        <!-- row 1 -->
+        <div>
+          <Image class="mb-8 lg:mb-12" src={Logo} alt="Logo" width={120} />
+
+          <div class="item-center mb-4 flex gap-3">
+            <Image
+              class="mt-1 size-[20px] self-start object-contain"
+              src={Location}
+              alt="location"
+            />
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua
+            </p>
+          </div>
+        </div>
+
+        <!-- row 2 -->
+        <div
+          class="mb-16 md:mb-0 md:self-center md:justify-self-end lg:mt-20 lg:self-start lg:justify-self-start"
+        >
+          <div class="item-center mb-4 flex gap-3">
+            <Image
+              class="mt-1 size-[20px] self-start object-contain"
+              src={Phone}
+              alt="phone"
+            />
+            <p>+1-543-123-4567</p>
+          </div>
+
+          <div class="item-center mb-4 flex gap-3">
+            <Image
+              class="mt-1 size-[20px] self-start object-contain"
+              src={Mail}
+              alt="phone"
+            />
+            <a href="#">example@fylo.com</a>
+          </div>
+        </div>
+
+        <!-- row 3 -->
+        <div class="mb-16 md:mb-0 lg:mt-20 lg:justify-self-center">
+          <ul>
+            <li>
+              <a
+                class="mb-2 inline-block text-accent-400 transition-colors duration-300 hover:text-white"
+                href="#">About Us</a
+              >
+            </li>
+
+            <li>
+              <a
+                class="mb-2 inline-block text-accent-400 transition-colors duration-300 hover:text-white"
+                href="#">Jobs</a
+              >
+            </li>
+
+            <li>
+              <a
+                class="mb-2 inline-block text-accent-400 transition-colors duration-300 hover:text-white"
+                href="#">Press</a
+              >
+            </li>
+
+            <li>
+              <a
+                class="inline-block text-accent-400 transition-colors duration-300 hover:text-white"
+                href="#">Blog</a
+              >
+            </li>
+          </ul>
+        </div>
+
+        <!-- row 4 -->
+        <div
+          class="md:mr-20 md:self-center md:justify-self-end lg:mr-0 lg:mt-20 lg:self-start lg:justify-self-start"
+        >
+          <ul>
+            <li>
+              <a
+                class="mb-2 inline-block text-accent-400 transition-colors duration-300 hover:text-white"
+                href="#">Contact Us</a
+              >
+            </li>
+
+            <li>
+              <a
+                class="mb-2 inline-block text-accent-400 transition-colors duration-300 hover:text-white"
+                href="#">Terms</a
+              >
+            </li>
+
+            <li>
+              <a
+                class="mb-2 inline-block text-accent-400 transition-colors duration-300 hover:text-white"
+                href="#">Privacy</a
+              >
+            </li>
+          </ul>
+        </div>
+
+        <!-- row 5 -->
+        <div class="md:col-[1/3] lg:col-auto lg:mt-20">
+          <div class="pb-8 pt-16 text-center lg:pb-0 lg:pt-0">
+            <a
+              class="mr-2 inline-block size-[32px] rounded-full border border-white leading-[32px] transition-all duration-300 hover:border-accent-100 hover:text-accent-100"
+              href="#"
+            >
+              <i class="fab fa-facebook-f"></i>
+            </a>
+
+            <a
+              class="mr-2 inline-block size-[32px] rounded-full border border-white leading-[32px] transition-all duration-300 hover:border-accent-100 hover:text-accent-100"
+              href="#"
+            >
+              <i class="fab fa-twitter"></i>
+            </a>
+
+            <a
+              class="mr-2 inline-block size-[32px] rounded-full border border-white leading-[32px] transition-all duration-300 hover:border-accent-100 hover:text-accent-100"
+              href="#"
+            >
+              <i class="fab fa-instagram"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>

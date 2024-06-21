@@ -1,0 +1,15 @@
+---
+import { Image } from 'astro:assets';
+import Navbar from './Navbar.astro';
+import Logo from '../asset/logo.svg';
+---
+
+<header class="bg-primary-100">
+  <div class="item-center container flex justify-between py-5">
+    <a href="#">
+      <Image src={Logo} alt="Logo" width={85} />
+    </a>
+
+    <Navbar />
+  </div>
+</header>

@@ -1,0 +1,25 @@
+---
+import Features from '../components/Features.astro';
+import Hero from '../components/Hero.astro';
+import Newsletter from '../components/Newsletter';
+import Productive from '../components/Productive.astro';
+import Testimonial from '../components/Testimonial.astro';
+import MainLayout from '../layout/MainLayout.astro';
+---
+
+<MainLayout>
+  <!-- Hero section -->
+  <Hero />
+
+  <!-- Features section -->
+  <Features />
+
+  <!-- Productive section -->
+  <Productive />
+
+  <!-- Testimonial section -->
+  <Testimonial />
+
+  <!-- Newsletter section -->
+  <Newsletter client:visible />
+</MainLayout>
